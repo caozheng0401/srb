@@ -19,7 +19,7 @@ import java.io.InputStream;
  * @create 2021/4/23 21:43
  */
 @Api(tags = "阿里云文件管理")
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("api/oss/file")
 public class FileController {

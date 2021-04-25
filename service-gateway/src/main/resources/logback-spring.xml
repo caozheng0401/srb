@@ -3,7 +3,7 @@
 
     <contextName>srb</contextName>
     <!-- 日志的输出目录 -->
-    <property name="log.path" value="D://StudyJava//ideawork//finance//srb_log//sms" />
+    <property name="log.path" value="D://StudyJava//ideawork//finance//srb_log//gateway" />
     <!--控制台日志格式：彩色日志-->
     <!-- magenta:洋红 -->
     <!-- boldMagenta:粗红-->
@@ -67,7 +67,7 @@
 
     <!-- 开发环境和测试环境 -->
     <springProfile name="dev,test">
-        <logger name="com.atguigu" level="DEBUG">
+        <logger name="com.atguigu" level="INFO">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="ROLLING_FILE" />
         </logger>

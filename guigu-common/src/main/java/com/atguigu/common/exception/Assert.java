@@ -40,7 +40,7 @@ public class Assert {
     /**
      * 断言表达式为真
      * 如果不为真，则抛出异常
-     *
+     *      *
      * @param expression 是否成功
      */
     public static void isTrue(boolean expression, ResponseEnum responseEnum) {

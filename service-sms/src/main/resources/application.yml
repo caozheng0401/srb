@@ -5,7 +5,10 @@ spring:
     active: dev # 环境设置
   application:
     name: service-sms # 服务名
-  #spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
   redis:
     host: 127.0.0.1
     port: 6379
@@ -26,3 +29,15 @@ aliyun:
     key-secret: 你的keysecret
     template-code: 你的短信模板code
     sign-name: 你的短信模板签名
+feign:
+  #开启Feign对Sentinel的支持
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000 #连接超时配置
+        readTimeout: 600000 #执行超时配置
+logging:
+  level:
+    com.atguigu.srb.sms.client.CoreUserInfoClient: DEBUG
